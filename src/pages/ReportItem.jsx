@@ -64,7 +64,7 @@ function ReportItem() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/requests",
+        "http://https://campusloop-backend.onrender.com/api/requests",
         {
           method: "POST",
           headers: {

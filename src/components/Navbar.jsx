@@ -20,9 +20,9 @@ function Navbar() {
 
     try {
       const [notificationsResponse, countResponse] = await Promise.all([
-        fetch(`http://localhost:8080/api/notifications/user/${user.id}`),
+        fetch(`http://https://campusloop-backend.onrender.com/api/notifications/user/${user.id}`),
         fetch(
-          `http://localhost:8080/api/notifications/user/${user.id}/unread-count`
+          `http://https://campusloop-backend.onrender.com/api/notifications/user/${user.id}/unread-count`
         )
       ]);
 
@@ -52,7 +52,7 @@ function Navbar() {
     try {
       if (!notification.readStatus) {
         const response = await fetch(
-          `http://localhost:8080/api/notifications/${notification.id}/read/user/${user.id}`,
+          `http://https://campusloop-backend.onrender.com/api/notifications/${notification.id}/read/user/${user.id}`,
           { method: "PUT" }
         );
 
