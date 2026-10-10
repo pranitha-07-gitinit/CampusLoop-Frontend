@@ -113,7 +113,7 @@ function MyReports() {
 
     try {
       const response = await fetch(
-        `http://https://campusloop-backend.onrender.com/api/requests/${editingId}/user/${user.id}`,
+        `https://campusloop-backend.onrender.com/api/requests/${editingId}/user/${user.id}`,
         {
           method: "PUT",
           headers: {
@@ -156,7 +156,7 @@ function MyReports() {
 
     try {
       const response = await fetch(
-        `http://https://campusloop-backend.onrender.com/api/requests/${report.id}/user/${user.id}`,
+        `https://campusloop-backend.onrender.com/api/requests/${report.id}/user/${user.id}`,
         {
           method: "DELETE"
         }
