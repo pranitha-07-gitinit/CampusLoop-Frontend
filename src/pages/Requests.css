@@ -1,0 +1,129 @@
+.requests-page {
+  min-height: 100vh;
+  padding: 50px 8%;
+  background: #f5f7fb;
+}
+
+.requests-page h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.requests-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+}
+
+.filters input {
+  width: 280px;
+}
+
+.filters select {
+  width: 180px;
+}
+
+.requests-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.request-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.request-card h2 {
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.request-card p {
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #fff3cd;
+  color: #856404;
+  font-size: 13px;
+}
+
+.status.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.no-results {
+  background: white;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.no-results h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: #666;
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+
+.contact-reporter-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-reporter-button:hover {
+  background: #1d4ed8;
+}
