@@ -16,7 +16,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://https://campusloop-backend.onrender.com/api/users/login",
+        "https://campusloop-backend.onrender.com/api/users/login",
         {
           method: "POST",
           headers: {

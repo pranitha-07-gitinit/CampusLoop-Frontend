@@ -64,7 +64,7 @@ function ReportItem() {
 
     try {
       const response = await fetch(
-        "http://https://campusloop-backend.onrender.com/api/requests",
+        "https://campusloop-backend.onrender.com/api/requests",
         {
           method: "POST",
           headers: {

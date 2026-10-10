@@ -33,7 +33,7 @@ function MyReports() {
 
     try {
       const response = await fetch(
-        `http://https://campusloop-backend.onrender.com/api/requests/user/${user.id}`
+        `https://campusloop-backend.onrender.com/api/requests/user/${user.id}`
       );
 
       if (!response.ok) {

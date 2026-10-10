@@ -12,7 +12,7 @@ function Requests() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://https://campusloop-backend.onrender.com/api/admin/requests")
+    fetch("https://campusloop-backend.onrender.com/api/admin/requests")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load reports.");

@@ -8,7 +8,7 @@ function Admin() {
   const [loading, setLoading] = useState(true);
 
   const loadRequests = () => {
-    fetch("http://https://campusloop-backend.onrender.com/api/admin/requests")
+    fetch("https://campusloop-backend.onrender.com/api/admin/requests")
       .then(function (response) {
         return response.json();
       })
@@ -28,7 +28,7 @@ function Admin() {
 
   const handleApprove = function (id) {
     fetch(
-      "http://https://campusloop-backend.onrender.com/api/admin/requests/" +
+      "https://campusloop-backend.onrender.com/api/admin/requests/" +
         id +
         "/approve",
       {
@@ -51,7 +51,7 @@ function Admin() {
 
   const handleReject = function (id) {
     fetch(
-      "http://https://campusloop-backend.onrender.com/api/admin/requests/" +
+      "https://campusloop-backend.onrender.com/api/admin/requests/" +
         id +
         "/reject",
       {
@@ -82,7 +82,7 @@ function Admin() {
     }
 
     fetch(
-      "http://https://campusloop-backend.onrender.com/api/admin/requests/" + id,
+      "https://campusloop-backend.onrender.com/api/admin/requests/" + id,
       {
         method: "DELETE"
       }

@@ -19,7 +19,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://https://campusloop-backend.onrender.com/api/users",
+        "https://campusloop-backend.onrender.com/api/users",
         {
           method: "POST",
           headers: {
